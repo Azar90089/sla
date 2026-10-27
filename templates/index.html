@@ -8,7 +8,7 @@
 <form id="attendance-form" novalidate><div class="fields"><label>Date<input id="attendance-date" type="date" value="{{ today }}" required></label><label>Labourers present<input id="labour-count" type="number" min="0" step="1" inputmode="numeric" placeholder="e.g. 24" required></label></div>
 <p id="date-hint" class="hint">Select a date and enter the total count.</p><div class="actions"><button id="submit-button" class="button primary">Save Attendance</button><button id="cancel-edit" class="button ghost" type="button" hidden>Cancel Edit</button></div></form></section>
 <section class="card"><div class="section-head month-head"><div><p class="eyebrow">MONTHLY SUMMARY</p><h2>Attendance by month</h2></div><div class="month-nav"><button class="icon-button" id="prev-month" aria-label="Previous month">‹</button><input id="month-picker" type="month"><button class="icon-button" id="next-month" aria-label="Next month">›</button></div></div>
-<div class="totals"><div><span id="monthly-total">0</span><small>labourer-days</small></div><div><span id="recorded-days">0</span><small>recorded days</small></div></div><div id="monthly-list" class="record-list"></div></section>
-<section class="card"><div class="section-head"><div><p class="eyebrow">LATEST RECORDS</p><h2>Recent attendance</h2></div><button id="show-all" class="text-button" type="button">Show all</button></div><div id="recent-list" class="record-list"></div></section>
+<div id="monthly-list" class="record-list"></div></section>
+
 <footer>Attendance is stored in your application database.</footer></main>
 <dialog id="confirm-dialog"><form method="dialog"><p class="eyebrow">CONFIRM ACTION</p><h2 id="dialog-title"></h2><p id="dialog-copy"></p><div class="actions"><button id="dialog-cancel" class="button ghost" value="cancel">Cancel</button><button id="dialog-confirm" class="button primary" value="confirm">Confirm</button></div></form></dialog></body></html>
